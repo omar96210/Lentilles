@@ -1,0 +1,45 @@
+<br />
+<br />
+<br />
+<div class="section section-basic">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <button class="btn btn-primary " [routerLink]="['/Canon']" >Canon</button>
+                <button class="btn btn-primary active"  >Nikon</button>
+                <button class="btn btn-primary" [routerLink]="['/Tamron']">Tamron</button>
+                <button class="btn btn-primary" [routerLink]="['/All']">All</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card-columns p-5 " style="padding: auto !important;">
+    <div class="card" *ngFor='let in of counter(10) ;let i = index'
+        style=" border: 1px solid #058f89; border-radius: 15px;">
+        <img class="card-img-top" src="assets/img/camer/Nikon _d5300/1.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title float-right">Nikon d5300</h5>
+            <p class="card-text float-right text-right" dir="rtl">
+                وحش الكروب فريم في النيكون🔥 نيكون d5300 📸 ⭐ شاشة متحركة و Wi-Fi ⭐ كسر زيرو بحاله ممتازه ⭐
+                شتراقل من 2k فقط !!! ⭐ شاحن - حزام - بطاريه - عدسة 18-55 بمانع اهتزاز- الوصولات ⭐ شنطة هدية ⭐
+                يوجد توصيل محافظات
+            </p>
+            <div class="text-center">
+                <button class="btn btn-primary btn-simple btn-round " type="button">
+                    <strong>
+                        المزيد
+                    </strong>
+                </button>
+            </div>
+        </div>
+        <div class="card-footer" style="border-top: 1px solid #058f89 !important;">
+            <small class="text-muted">
+                ج.م.6,000.00
+                <span style="text-decoration: line-through;">
+                    ج.م.6,500.00
+                </span>
+            </small>
+        </div>
+    </div>
+
+</div>

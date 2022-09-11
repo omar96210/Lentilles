@@ -1,0 +1,40 @@
+<br />
+<br />
+<br />
+<div class="section section-basic">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <button class="btn btn-primary " [routerLink]="['/Canon']" >Canon</button>
+                <button class="btn btn-primary"  [routerLink]="['/Nikon']">Nikon</button>
+                <button class="btn btn-primary active">Tamron</button>
+                <button class="btn btn-primary" [routerLink]="['/All']">All</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card-columns p-5 " style="padding: auto !important;">
+    <div class="card" *ngFor='let in of counter(10) ;let i = index'
+        style=" border: 1px solid #058f89; border-radius: 15px;">
+        <img class="card-img-top " src="assets/img/camer/1111.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title float-right" >Tamaron 90mm f2.8 for Canon</h5>
+            <p class="card-text float-right text-right" dir="rtl">
+                ⚫️ عدسة تامرون 90mm للكانون 🔴 فتحة عدسة 2.8 🔴 حالة زيرو لاتشكوى من اي عيوب 🔴 تستخدم لمصورين طب الاسنان وفي تصوير البورترية وتصوير الاشياء الدقيقة 🔴 كاب امامي + كاب خلفي 🔴
+            </p>
+            <div class="text-center">
+                <button class="btn btn-primary btn-simple btn-round " type="button">
+                    <strong>
+                        المزيد
+                    </strong>
+                </button>
+            </div>
+        </div>
+        <div class="card-footer" style="border-top: 1px solid #058f89 !important;">
+            <small class="text-muted">
+                ج.م.7,000.00
+            </small>
+        </div>
+    </div>
+
+</div>

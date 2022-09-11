@@ -1,0 +1,46 @@
+<br />
+<br />
+<br />
+<div class="section section-basic">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <button class="btn btn-primary active" >Canon</button>
+                <button class="btn btn-primary"  [routerLink]="['/Nikon']">Nikon</button>
+                <button class="btn btn-primary" [routerLink]="['/Tamron']">Tamron</button>
+                <button class="btn btn-primary" [routerLink]="['/All']">All</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card-columns p-5" style="padding: auto !important;">
+    <div class="card" *ngFor='let products of product'
+        style=" border: 1px solid #058f89; border-radius: 15px;">
+        <ngb-carousel>
+            <ng-template ngbSlide *ngFor='let rates of products.pic;let i = index'>
+                <img class="d-block" src="{{products.pic[i]}}" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </ng-template>
+        </ngb-carousel>
+        <div class="card-body">
+            <h5 class="card-title float-right">{{products.title}}</h5>
+            <p class="card-text float-right text-right" dir="rtl">
+                {{products.des}}
+            </p>
+            <div class="text-center">
+                <a  href="{{products.link}}" class="btn btn-primary btn-simple btn-round " type="button" target="_blank">
+                    <strong>
+                        المزيد
+                    </strong>
+                </a>
+            </div>
+        </div>
+        <div class="card-footer" style="border-top: 1px solid #058f89 !important;">
+            <small class="text-muted">
+                {{products.price}}
+            </small>
+        </div>
+    </div>
+</div>
